@@ -1,0 +1,88 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+@import url('./loader.css');
+
+/* Sections style */
+header {
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid #371300;
+  background-color: beige;
+}
+header p {
+  font-size: 14px;
+  text-align: center;
+}
+.pixabay-link {
+  font-weight: 570;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pixabay-link:hover {
+  color: darkorange;
+}
+[data-image-query] {
+  margin: 8px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+[data-image-query] > input {
+  padding: 8px 8px;
+  width: 272px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+}
+[data-image-query] > button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: darkgoldenrod;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+[data-image-query] > button:hover {
+  background-color: darkorange;
+}
+.gallery {
+  margin: 12px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.gallery img {
+  width: 360px;
+  height: 152px;
+  object-fit: cover;
+}
+.gallery li {
+  border: 1px solid #371300;
+}
+.photo-info {
+  width: 100%;
+  text-align: center;
+}
+.photo-info th {
+  font-weight: 600;
+}

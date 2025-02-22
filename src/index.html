@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#11 homework of GoIT JS study module</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>
+          This is
+          <a class="pixabay-link" href="https://pixabay.com" target="_blank"
+            >Pixabay</a
+          >
+          photo query form. Query language is English. Query limit is 100 per
+          minute. If you want to use any of the photos please download to your
+          own spaces.
+        </p>
+        <form data-image-query>
+          <input
+            type="text"
+            name="query"
+            placeholder="Example: 'yellow+flower'"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="loader hidden"></div>
+        <ul class="gallery"></ul>
+      </div>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
