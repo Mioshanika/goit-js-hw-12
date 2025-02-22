@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/assets/favicon-DcBtz0py.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#12 homework of GoIT JS study module</title>
+    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-9OJ7S6ua.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-Dr4k8ETB.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-B8pv80gX.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>
+          This is
+          <a class="pixabay-link" href="https://pixabay.com" target="_blank"
+            >Pixabay</a
+          >
+          photo query form. Query language is English. Query limit is 100 per
+          minute. If you want to use any of the photos please download to your
+          own spaces.
+        </p>
+        <form data-image-query>
+          <input
+            type="text"
+            name="query"
+            placeholder="Example: 'yellow+flower'"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="gallery"></ul>
+        <button class="load-more-btn hidden">Load more</button>
+        <div class="loader hidden"></div>
+        <p class="end-msg hidden">&lt;&nbsp;End of the collection&nbsp;&gt;</p>
+      </div>
+    </main>
+  </body>
+</html>
