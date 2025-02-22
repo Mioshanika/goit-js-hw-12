@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export function requestImages(query) {
+export async function requestImages({ query, page, perPage }) {
   const axiosConfig = {
     baseURL: 'https://pixabay.com/api/',
     params: {
@@ -9,8 +9,10 @@ export function requestImages(query) {
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: 'true',
+      page: `${page}`,
+      per_page: `${perPage}`,
     },
   };
   const pixabayAxios = new axios.create(axiosConfig);
-  return pixabayAxios.get('');
+  return await pixabayAxios.get('');
 }

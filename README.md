@@ -1,4 +1,4 @@
-This project is GoIT JavaScript homework #11, based on
+This project is GoIT JavaScript homework #12, based on
 
 # Vanilla App Template
 

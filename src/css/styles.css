@@ -86,3 +86,26 @@ header p {
 .photo-info th {
   font-weight: 600;
 }
+.load-more-btn {
+  margin: 4px auto 28px;
+  padding: 8px 16px;
+  display: block;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: darkgoldenrod;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.load-more-btn:hover {
+  background-color: darkorange;
+}
+.end-msg {
+  padding-top: 4px;
+  padding-bottom: 28px;
+  width: 100%;
+  text-align: center;
+}
